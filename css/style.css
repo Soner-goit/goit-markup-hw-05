@@ -620,8 +620,7 @@ img {
 .closemodal:hover,
 .closemodal:focus {
   background-color: #404bbf;
-  outline: 2px solid #4D5AE5; /* Odak vurgusu için outline ekle */
-  border-color: transparent;
+  border: none;
 }
 
 /* .form {
@@ -749,12 +748,10 @@ img {
 }
 
 .checkboxinput:checked + .checkboxlabel .checkboxspan {
- /* background-color: var(--span-checked-background);
+  background-color: var(--span-checked-background);
   border: none;
-  fill: var(--footer-text);*/
-  background-color: #404bbf;
-  border-color: #404bbf; /* Kenarlık rengini arka planla aynı yap */
-  fill: #F4F4FD;
+  fill: var(--footer-text);
+  
 }
 
 .modal .herobutton {
