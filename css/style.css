@@ -306,7 +306,8 @@ img {
 }
 
 .svgproperties {
-  fill: #f4f4fd;
+  /* fill: #f4f4fd; */
+    fill: #ffffff
 }
 
 /* SECTION 5 CUSTOMERS */
@@ -618,6 +619,7 @@ img {
 .closemodal:focus {
   background-color: #404bbf;
   border: none;
+  /* eklendi */  fill: #ffffff;
 }
 
 /* .form {
@@ -747,6 +749,7 @@ img {
   background-color: var(--span-checked-background);
   border: none;
   fill: var(--footer-text);
+  /* eklendi */fill: #F4F4FD
 }
 
 .modal .herobutton {
