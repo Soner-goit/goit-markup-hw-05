@@ -756,51 +756,61 @@ img {
   margin: 0 auto;
 }
 
-/*Eklemeler */
-/* Buton stili */
-.herobutton {
-  background-color: #404bbf; /* Başlangıç rengi */
-  border: 2px solid #404bbf; /* Başlangıç kenarlığı */
-  color: #fff; /* Yazı rengi */
-  padding: 10px 20px; /* İç boşluklar */
-  border-radius: 5px; /* Kenar yuvarlama */
-  font-size: 16px; /* Yazı tipi boyutu */
-  cursor: pointer; /* Fare işareti */
-  transition: all 0.3s ease; /* Geçiş efekti */
+/*  eklemeler   */
+/* Takım Üyesi Kartları */
+.teammember {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 264px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Button üzerine gelindiğinde */
-.herobutton:hover {
-  background-color: #505acc; /* Hover rengi */
-  border: 2px solid #505acc; /* Hover kenarlığı */
+/* Üye açıklama kısmı */
+.memberdescription {
+  margin-top: 15px;
 }
 
-/* Button odaklandığında */
-.herobutton:focus {
-  background-color: #505acc; /* Focus rengi */
-  border: 2px solid #505acc; /* Focus kenarlığı */
-  outline: none; /* Odak kenarlığını kaldırma */
+/* Sosyal medya ikonları listesi */
+.socialicons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
 }
 
-/* SVG üzerine gelindiğinde */
-.herobutton:hover svg,
-.herobutton:focus svg {
-  fill: #ffffff; /* SVG rengini beyaz yap */
+/* Sosyal medya ikonlarının dışı */
+.socialicon {
+  width: 40px;
+  height: 40px;
+  background-color: #4D5AE5; /* Varsayılan arkaplan rengi */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
-/* Input odaklandığında */
-input:focus {
-  border-color: #4D5AE5; /* Input odak rengi */
+/* Sosyal medya ikonlarına hover efekti */
+.socialicon:hover {
+  background-color: #404bbf; /* Hover'da arkaplan rengini değiştir */
 }
 
-/* Input seçili olduğunda */
-input:checked + span {
-  background-color: #404bbf; /* Seçili input arkaplan rengi */
-  border: none; /* Kenarlık kaldırma */
-  fill: #F4F4FD; /* SVG dolgusu değişimi */
+/* SVG ikonlar */
+.svgproperties {
+  fill: white; /* İkonların varsayılan rengi */
+  width: 20px;
+  height: 20px;
+  transition: fill 0.3s ease; /* Hover geçiş efekti */
 }
 
-/* Textarea odaklandığında */
-textarea:focus {
-  border-color: #4D5AE5; /* Textarea odak rengi */
+/* İkon hover efekti: SVG rengi değiştir */
+.socialicon:hover .svgproperties {
+  fill: #FFD700; /* Hover sırasında ikonun rengi altın sarısı olacak */
 }
