@@ -192,6 +192,7 @@ img {
 .herobutton:hover,
 .herobutton:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 /* SECTION1 */
@@ -303,6 +304,7 @@ img {
 .sociallink:hover,
 .sociallink:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .svgproperties {
@@ -376,6 +378,7 @@ img {
 .footer .sociallink:hover,
 .footer .sociallink:focus {
   background-color: #31d0aa;
+  border: none;
 }
 
 .footer .paragraph {
@@ -511,7 +514,8 @@ img {
 
 .btn:hover,
 .btn:focus {
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
+  border:none;
   background-color: #404bbf;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -746,10 +750,11 @@ img {
 }
 
 .checkboxinput:checked + .checkboxlabel .checkboxspan {
-  background-color: var(--span-checked-background);
+  /* background-color: var(--span-checked-background); */
   border: none;
-  fill: var(--footer-text);
-  /* eklendi */fill: #F4F4FD
+   background-color: #404bbf
+  /* fill: var(--footer-text); */
+  /* eklendi */ fill: #F4F4FD
 }
 
 .modal .herobutton {
