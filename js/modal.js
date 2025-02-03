@@ -5,11 +5,6 @@
     modal: document.querySelector("[data-modal]"),
   };
 
-  if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) {
-    console.error("Modal bileşenleri bulunamadı!");
-    return;
-  }
-
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
@@ -17,4 +12,3 @@
     refs.modal.classList.toggle("is-hidden");
   }
 })();
-
